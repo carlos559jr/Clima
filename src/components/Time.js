@@ -29,7 +29,7 @@ const Time = () => {
                 <p>{weather.name} {weather.sys?.country}</p>
                 <section className='data'>
                     <div>
-                        <img className='img' alt='image time' src={ `http://openweathermap.org/img/wn/${weather.weather?.[0].icon}@2x.png` }/>
+                        <img className='img' alt='the time' src={ `http://openweathermap.org/img/wn/${weather.weather?.[0].icon}@2x.png` }/>
                     </div>
                     <div>
                         <p>"{weather.weather?.[0].description}" </p>
