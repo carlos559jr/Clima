@@ -1,10 +1,45 @@
+body{
+  background-color: aquamarine;
+}
+
 .App {
   text-align: center;
+  display: flex;
+  justify-content: space-around;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  max-width: 80vw;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 30px;
+  background: grey;
+  margin-top: 6rem;
+  font-weight: bold;
+}
+
+button{
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 50%;
+  background: gray;
+}
+
+.data{
+  display: flex;
+  justify-content: space-around;
+}
+
+.img{
+  width: 150px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
