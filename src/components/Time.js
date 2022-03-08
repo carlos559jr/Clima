@@ -35,7 +35,7 @@ const Time = () => {
                         <p>"{weather.weather?.[0].description}" </p>
                         <p> Wind speed: {weather.wind?.speed} </p>
                         <p>Humedity: {weather.main?.humidity}%</p>
-                        <p>Temperature: {isShowing ? `${Math.round((weather.main?.temp-273.15))} °C` : `${Math.round(((weather.main?.temp- 73.15)*9/5+32))} °F`} </p>
+                        <p>Temperature: {isShowing ? `${Math.round((weather.main?.temp-273.15))} °C` : `${Math.round(((weather.main?.temp- 273.15)*9/5+32))} °F`} </p>
                     </div>
                 </section>
                 <button onClick={() => setIsShowing(!isShowing)}>Change to: {isShowing ? "°F" : "°C"}</button>
